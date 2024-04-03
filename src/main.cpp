@@ -16,6 +16,7 @@ void setup() {
   Serial.begin(115200);           // make sure your Serial Monitor is also set at this baud rate.
   Dabble.begin("Diogo.P");        //set bluetooth name of your device
   M5.begin(115200);
+  M5.Lcd.setTextSize(3);
   M5.Lcd.setCursor(90, 120);
   M5.Lcd.print("Up");
 }
